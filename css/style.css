@@ -1,0 +1,118 @@
+
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000;
+  /* margin: 0 auto; */
+}
+
+.clock {
+  width: 350px;
+  height: 350px;
+  border: 10px solid white;
+  border-radius: 50%;
+  position: relative;
+   box-shadow: 0 4px 8px 0 rgba(218, 215, 215, 0.2), 0 6px 20px 0 rgba(236, 233, 233, 0.19);
+  /* box-shadow: 10px 10px 10px 10px rgba(183, 138, 138, 0.5); */
+}
+
+.face {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  /* padding: 10px; */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #3e9a55;
+  background-color: rgb(66, 212, 122);
+}
+
+.number {
+  position: absolute;
+  font-size: 1.5em;
+  color: white;
+}
+
+.number1 { transform: translate(110px, -50px); }
+.number2 { transform: translate(77px, -100px); }
+.number3 { transform: translate(0, -140px); }
+.number4 { transform: translate(-77px, -100px); }
+.number5 { transform: translate(-110px, -50px); }
+.number6 { transform: translate(-140px, 0); }
+.number7 { transform: translate(-110px, 50px); }
+.number8 { transform: translate(-77px, 100px); }
+.number9 { transform: translate(0, 140px); }
+.number10 { transform: translate(77px, 100px); }
+.number11 { transform: translate(110px, 50px); }
+.number12 { transform: translate(140px, 0); }
+
+.hand {
+  width: 50%;
+  height: 6px;
+  background: white;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform-origin: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+.hand1 {
+  width: 50%;
+  height: 6px;
+  background: white;
+  position: absolute;
+  top: 49%;
+  left: 29%;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition: transform 0.5s ease-in-out;
+}
+.hand2 {
+  width: 50px;
+  height: 6px;
+  background: white;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition: transform 0.5s ease-in-out;
+}
+
+.hour {
+  height: 4px;
+  width: 69px;
+  background: rgb(136, 123, 123);
+}
+
+.minute {
+  height: 4px;
+  width: 93px;
+  background: white;
+}
+
+.second {
+  height: 3px;
+  width: 100px;
+  background: red;
+}
+
+.center {
+  width: 12px;
+  height: 12px;
+  background: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
